@@ -12,9 +12,9 @@ map[Ot-Tracer-Sampled:[1] Ot-Tracer-Spanid:[136b6ec28f79c086] Ot-Tracer-Traceid:
 map[Traceparent:[00-d439ca925f7d893bdda5db9ad41bfb11-f591e7677390360d-01]]
 ```
 ```
-> go run main.go ot https://test-api.k6.io
-200 OK c38482721760cc6e916ca3855a74aab7 53.601µs 461.355696ms
-map[Ot-Tracer-Sampled:[1] Ot-Tracer-Spanid:[91e8ecf04ed8c86f] Ot-Tracer-Traceid:[916ca3855a74aab7]]
+> go run main.go b3 https://test-api.k6.io
+200 OK e5b44267e75bee7ba6c06a8a3c579980 70.961µs 473.51734ms
+map[B3:[e5b44267e75bee7ba6c06a8a3c579980-bf809131175202b9-1]]
 ```
 ```
 > go run main.go jaeger https://test-api.k6.io
